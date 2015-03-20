@@ -1,0 +1,32 @@
+$backForm : #4A4A4A;
+$border : #5E5E5E;
+$greyBG : #333333;
+
+@mixin rounded-corners($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition($time) {
+    -webkit-transition: $time ease-in-out 0s;
+       -moz-transition: $time ease-in-out 0s;
+        -ms-transition: $time ease-in-out 0s;
+         -o-transition: $time ease-in-out 0s;
+            transition: $time ease-in-out 0s;
+}
+@mixin transRotate($value) {
+    -webkit-transform: rotate($value);
+       -moz-transform: rotate($value);
+        -ms-transform: rotate($value);
+         -o-transform: rotate($value);
+            transform: rotate($value);
+}
+@mixin boxshadow($shadow){
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+        -ms-box-shadow: $shadow;
+         -o-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
